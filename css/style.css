@@ -1,1 +1,281 @@
-.head_bar,.input_section>form>button,.search_section>form>button{background-color:#c52a2a;color:#fff}*{padding:0;margin:1}body,button,input{font-family:'Open Sans',sans-serif}button,input{font-size:16px}.head_bar{padding:12px;display:flex;align-items:center;justify-content:center}main{margin:0 auto;padding:16px}.input_section{display:flex;flex-direction:column;padding:16px;border:1px solid #000;border-radius:10px}.input_section>h2{text-align:center;color:#c52a2a;margin-bottom:25px}.input_section>form>.input{margin:3px 0}.input_section>form>button{border:0;border-radius:5px;display:block;width:100%;padding:8px;cursor:pointer}.input_section>form>button>span{font-weight:700}.input_section>form>.input>input{display:block;width:100%;padding:8px;border-radius:5px}.input_section>form>.input>label{color:#c52a2a;font-weight:700}.input_section>form>.input_inline{margin:12px 0;display:flex;align-items:center}.input_section>form>.input_inline>label{color:#c52a2a;font-weight:700;margin-right:16px}.item{border-radius:16px;margin-top:16px;padding:12px 24px;background:#fff;display:flex;align-items:center}.item>.inner h2{margin-bottom:unset}.item>.inner p{margin-top:5px}.search_section{margin:8px 0;display:flex;flex-direction:column;align-items:center;padding:16px;border:1px solid #000;border-radius:10px}.book_shelf>h2,.search_section>h2{color:#c52a2a}.search_section>form{padding:16px;width:100%;display:grid;grid-template-columns:auto 1fr 0.5fr;grid-gap:10px}.search_section>form>label{display:flex;align-items:center}.search_section>form>input{padding:5px;border-radius:5px}.search_section>form>button{border:0;border-radius:5px;cursor:pointer}._shelf,.book_shelf{border:1px solid #000;padding:16px}.book_shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(1fr));grid-gap:10px;border-radius:10px}._shelf{margin:16px 0 0;border-radius:10px}.book_shelf>.book_list{padding:5px}.book_shelf>.book_list>.book_item{padding:8px 16px 16px;border:1px solid #000;border-radius:5px;margin:10px 0}.book_shelf>.book_list>.book_item>h3,p{margin:8px 0}.book_shelf>.book_list>.book_item>.action>button{border:0;border-radius:5px;cursor:pointer;display:inline-block;width:48%;padding:8px}.book_shelf>.book_list>.book_item>.action>.green{background-color:#006400;color:#fff}.book_shelf>.book_list>.book_item>.action>.red{background-color:#8b0000;color:#fff}.column{float:left;width:33%;padding-top:10px}.check-button,.trash-button,.undo-button{width:40px;height:40px;cursor:pointer;border:none}.row:after{content:"";display:table;clear:both}.check-button{background:url('../assets/check-outline.svg') 0 0/contain;margin-left:auto}.check-button:hover{background:url('../assets/check-solid.svg') 0 0/contain}.trash-button{background:url('../assets/trash-outline.svg') 0 0/contain;margin-left:16px}.trash-button:hover{background:url('../assets/trash-fill.svg') 0 0/contain}.undo-button,.undo-button:hover{background:url('../assets/undo-ouline.svg') 0 0/contain}.undo-button{margin-left:auto}.check-button:focus,.trash-button{outline:0}.shadow{box-shadow:10px 10px 10px rgba(154,160,185,.2),0 15px 40px rgba(166,173,201,.2)}@media only screen and (max-width:1024px){.wrapper{margin:0}.form,.wrapper .container{width:100%}.list-item{width:90%}}
+* {
+    padding: 0;
+    margin: 1;    
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(197, 42, 42);
+    color: white;
+}
+main {    
+    margin: 0 auto;
+    padding: 16px;    
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(197, 42, 42);
+    margin-bottom: 25px;
+}
+
+.input_section > form > .input {
+    margin: 3px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(197, 42, 42);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.input_section > form > .input > label {
+    color: rgb(197, 42, 42);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: rgb(197, 42, 42);
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.search_section {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search_section > h2 {
+    color: rgb(197, 42, 42);
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: rgb(197, 42, 42);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    grid-gap: 10px;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+._shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    color: rgb(197, 42, 42);    
+}
+
+.book_shelf > .book_list {
+    padding: 5px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;        
+    border-radius: 5px;
+    cursor: pointer;        
+    display: inline-block;
+    width: 48%;
+    padding: 8px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;    
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;    
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding-top: 10px;
+}
+
+.row:after {    
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+.shadow {
+    box-shadow: 10px 10px 10px rgba(154, 160, 185, .2), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
