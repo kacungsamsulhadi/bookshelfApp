@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submission Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="head_bar">
+        <h1 class="head_bar__tittle">Submission Bookshelf</h1>
+    </header>
+    <main>
+        <div class="column">
+            <div class="row">
+                <section class="input_section">
+                    <h2>Input New Book</h2>
+                    <form class="form" action="#" id="form">
+                        <div class="input form-group form-title">
+                            <label for="title">Book Title</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+                        <div class="input form-group form-title">
+                            <label for="author">Author</label>
+                            <input type="text" id="author" name="author" required>
+                        </div>
+                        <div class="input form-group form-title">
+                            <label for="year">Year</label>
+                            <input type="text" id="year" name="year" required>
+                        </div>
+                        <div class="input_inline"></div>                        
+                        <button id="bookSubmit" type="submit">Save</button>                        
+                    </form>
+                </section>                
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <section class="book_shelf">
+                    <h2>Unfinished Books</h2>
+                    <div id="incompleteBookshelfList" class="book_list">
+                        <div class="book_item" id="todos"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="column">
+            <div class="row">
+                <section class="book_shelf">
+                    <h2>Finished Books</h2>
+                    <div id="completeBookshelfList" class="book_list">
+                        <div class="book_item" id="completed-todos"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Supaya aplikasimu menjadi lebih baik lagi, berikut beberapa catatan terkait submission kamu:
+
+Kamu dapat menambahkan fungsi edit book, agar user dapat mengedit buku dan juga kamu menambahkan fitur pencarian agar user dapat mencari data buku dengan mudah.
+Untuk contohnya seperti yang ada pada link berikut : https://bookshelfappsdicoding.netlify.app/
+Beberapa tombol aksi seperti "Delete" dan sebagainya bisa di transformasikan ke icon aga lebih menarik. Kamu bisa menggunakan library seperti font-awesome atau material-icons sebagai penyedia iconnya.
+Agar lebih menarik lagi, kamu dapat menambahkan custom dialog saat menghapus buku dengan library seperti SweetAlert2. Kamu bisa membaca dokumentasinya pada https://sweetalert2.github.io/
